@@ -1,7 +1,7 @@
 var nr = 0;
 
 const settings = {
-	"video_id": 0;
+	"video_id": 0
 };
 
 function guess()
