@@ -341,7 +341,7 @@ function instructions()
 	{
 		instr.style.visibility = "visible";
 	}
-}
+};
 
 function load_video()
 {
@@ -371,13 +371,13 @@ function load_video()
 		place_form.style.display = 'none';
 		pass_form.style.display = 'none';
 	}
-}
+};
 
 function show_pass()
 {
 	place_form.style.display = 'none';
 	pass_form.style.display = 'block';
-}
+};
 
 
 function getVideoIdFromUrl()
@@ -409,7 +409,7 @@ function congrats()
 		video_id++;
 		window.location.href = window.location.href.split('?')[0] + '?video_id=' + video_id.toString();
 	}
-}
+};
 
 function hint()
 {
@@ -423,7 +423,7 @@ function hint()
 		hints.innerHTML = "Parola este " + secrets[video_id].pass;
 	}
 	hints.style.display = "block";
-}
+};
 
 function getPassword(pass)
 {
@@ -434,7 +434,7 @@ function getPassword(pass)
 	result = result.replace("â", "a");
 	result = result.replace("î", "i");
 	return result;
-}
+};
 
 function guess()
 {
@@ -490,4 +490,4 @@ function start()
 		
 		incorrect.style.display = "block";
 	}
-}
+};
