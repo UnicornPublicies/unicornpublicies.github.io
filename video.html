@@ -14,15 +14,26 @@
   
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<span class="w3-button w3-black instructions w3-large" onclick="instructions();">???</span> 
+<span class="w3-black instructions w3-large" id="instr">
+<br><br>”Ghicește cuvântul...” - rezolvă ghicitoarea și scrie parola mai jos
+<br><br>”Ghicește locul...” - rezolvă ghicitoarea, du-te la locul pe care<br>l-ai aflat și găsește parola
+<br><br>”Ghicește titlul melodiei...” - rezolvă ghicitoarea și scrie titlul mai jos</span> 
   <div class="w3-display-middle w3-center">
-	<span class="w3-text-white w3-hide-small" style="font-size:40px">Ghicește secretul! Indiciul este:<br></span>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M6f3nm2vQyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<form action="/action_page.php">
+  
+	<span class="w3-text-white w3-hide-small" style="font-size:40px" id="titlu-mare">Ghicește secretul!<br></span>
+    <iframe id="video_frame" width="560" height="315" src="" title="YouTube video player" 
+	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<form id="pass-form">
 		<label class="w3-xxlarge" for="pass">Secretul:</label>
 		<input class="w3-xxlarge w3-black" type="text" id="pass" name="pass"><br><br>
-		<span class="w3-button w3-xxlarge w3-black" onclick="guess();">Ăsta e secretul!</span>
 		<span class="w3-button w3-xxlarge w3-black" onclick="hint();">HINT</span> 
+		<span class="w3-button w3-xxlarge w3-black" onclick="guess();">Ăsta e secretul!</span>
 		<p class="w3-xxlarge" id="hint">Încearcă din nou :)</p>
+	</form>
+	<form id="place-form">
+	<span class="w3-button w3-xxlarge w3-black" onclick="show_pass();">Am găsit locul secret!</span> 
+
 	</form>
   </div>
 </header>
@@ -31,6 +42,12 @@
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
   <p>La mulți ani, Ioana!</a></p>
 </footer>
+
+<script>
+window.onload = function() {
+  load_video();
+};
+</script>
 
 </body>
 </html>
