@@ -297,6 +297,22 @@ const secrets = {
 		"pass": "gangnam style",
 		"pass2": "gagnam style"
 	},
+	9: {
+		"titlu": "Ghicește cuvântul secret",
+		"type": "pass",
+		"video_url": "https://www.youtube.com/embed/47G49RfrVyA",
+		"hints": ["Copii + părinți + bunici = ?","Laitmotivul din Fast and Furious","Puya - Suntem o mare ..., ne-avem ca frații,"],
+		"pass": "familie",
+		"pass2": "familia"
+	},
+	10: {
+		"titlu": "Ghicește cuvântul secret",
+		"type": "pass",
+		"video_url": "https://www.youtube.com/embed/Fj9m1chBLwo",
+		"hints": ["Botez, nuntă, etc.","Este și un film faimos cu numele ăsta","În engleză, ...”Dumnezeu-pârinți”"],
+		"pass": "nasi",
+		"pass2": "nasii"
+	},
 	11: {
 		"titlu": "Ghicește cuvântul secret",
 		"type": "pass",
