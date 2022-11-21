@@ -265,6 +265,14 @@ const secrets = {
 		"pass": "andu",
 		"pass2": "iubitul meu"
 	},
+	4: {
+		"titlu": "Ghicește cuvântul secret",
+		"type": "pass",
+		"video_url": "https://www.youtube.com/embed/r-Y72jmUPFg",
+		"hints": ["Era seara pe Diva parcă","Orașul se numește Stars Hollow","Pe fată o cheama Rory"],
+		"pass": "lorelai",
+		"pass2": ""
+	},
 	5: {
 		"titlu": "Ghicește locul secret și găsește parola",
 		"type": "place",
@@ -338,6 +346,14 @@ const secrets = {
 		"pass2": ""
 	},
 	14: {
+		"titlu": "Take a break! Parola e MATI",
+		"type": "pass",
+		"video_url": "https://www.youtube.com/embed/Xa7qKJ_PnaU",
+		"hints": ["MATI","M A T I","MAAATIIIII"],
+		"pass": "mati",
+		"pass2": "matei"
+	},
+	15: {
 		"titlu": "Felicitări! One last thing...",
 		"type": "final",
 		"video_url": "https://www.youtube.com/embed/emR3u8bsBjg"
